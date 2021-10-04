@@ -17,11 +17,9 @@
 					<h4>CaminX</h4>
 					<ul class="list-unstyled">
 						<li><a href="#">Help Center</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Career</a></li>
-						<li><a href="#">How It Works</a></li>
-						<li><a href="#">Article & Tips</a></li>
-						<li><a href="#">Terms & Service</a></li>
+						<li><a href="#">Despre Noi</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Termenii & Conditii</a></li>
 					</ul>
 				</div>
 			</div>
@@ -41,11 +39,11 @@
 			<div class="col-sm-7 col-md-6 col-lg-4 col-xl-4">
 				<div class="footer_social_widget">
 					<h4>Aboneaza-te!</h4>
-					<p class="text-white mb20">Promitem ca nu o sa primiti spam.</p>
+					<p class="text-white mb20">Promitem ca nu o sa primesti spam.</p>
 					<form class="footer_mailchimp_form">
 						<div class="form-row align-items-center">
 							<div class="col-auto">
-								<input type="email" class="form-control" id="inlineFormInput" placeholder="Enter your email">
+								<input type="email" class="form-control" id="inlineFormInput" placeholder="Adresa ta de email">
 								<button type="submit" class="btn btn-primary">Abonare</button>
 							</div>
 						</div>

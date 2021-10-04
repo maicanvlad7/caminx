@@ -2631,7 +2631,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
   width: 280px !important;
 }
 .select-wrap.style2-dropdown input.refineText.formTextbox{
-  width: 240px !important;
+  width: 200px !important;
 }
 .searchBoxElement{
   background-color: #ffffff;
@@ -14426,7 +14426,7 @@ section {
 }
 .divider.home-style1{
   background-attachment: scroll;
-  background-image: url("../images/background/4.jpg");
+  background-image: url("../images/background/homeBannerBusiness.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

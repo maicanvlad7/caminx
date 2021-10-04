@@ -82,10 +82,10 @@
 					<div class="col-lg-12">
 						<ul class="sign_up_tab nav nav-tabs" id="myTab" role="tablist">
 							<li class="nav-item">
-								<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Sign in</a>
+								<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Login</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Register</a>
+								<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Inregistrare</a>
 							</li>
 						</ul>
 					</div>
@@ -103,18 +103,21 @@
 									</div>
 									<div class="form-group custom-control custom-checkbox">
 										<input type="checkbox" class="custom-control-input" id="exampleCheck1">
-										<label class="custom-control-label" for="exampleCheck1">Remember me</label>
-										<a class="btn-fpswd float-right" href="#">Forgot password?</a>
+										<label class="custom-control-label" for="exampleCheck1">Tine-ma minte!</label>
+										<a class="btn-fpswd float-right" href="#">Am uitat parola?</a>
 									</div>
-									<button type="submit" class="btn btn-log btn-block btn-thm">Sign in</button>
-									<p class="text-center mb30 mt20">Don't have an account? <a class="text-thm" href="#">Sign up</a></p>
+									<button type="submit" class="btn btn-log btn-block btn-thm">Login</button>
+									<p class="text-center mb30 mt20">Nu ai un cont? <a class="text-thm" href="#">Inregistrare</a></p>
 									<hr>
+									<div class="row justify-content-center">
+										<p >COMING SOON</p><br>
+									</div>
 									<div class="row mt30">
 										<div class="col-lg-6">
-											<button type="submit" class="btn btn-fb btn-block"><i class="fa fa-facebook float-left mt5"></i> Log In via Facebook</button>
+											<button disabled type="submit" class="btn btn-fb btn-block"><i class="fa fa-facebook float-left mt5"></i> Log In via Facebook</button>
 										</div>
 										<div class="col-lg-6">
-											<button type="submit" class="btn btn-googl btn-block"><i class="fa fa-google float-left mt5"></i> Log In via Google+</button>
+											<button disabled type="submit" class="btn btn-googl btn-block"><i class="fa fa-google float-left mt5"></i> Log In via Google+</button>
 										</div>
 									</div>
 								</form>
@@ -126,7 +129,7 @@
 							<div class="sign_up_form">
 								<ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
 									<li class="nav-item" role="presentation">
-										<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Customer</a>
+										<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Student</a>
 									</li>
 									<li class="nav-item" role="presentation">
 										<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Business Owner</a>
@@ -142,16 +145,19 @@
 												<input type="text" class="form-control" id="exampleInputName" placeholder="Username">
 											</div>
 											<div class="form-group input-group mb20">
-												<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+												<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Parola">
 											</div>
 											<button type="submit" class="btn btn-log btn-block btn-thm">Sign Up</button>
 											<hr>
+											<div class="row justify-content-center">
+												<p>Coming SOON</p>
+											</div>
 											<div class="row">
 												<div class="col-lg-6">
-													<button type="submit" class="btn btn-block btn-fb"><i class="fa fa-facebook float-left mt5"></i> Log In via Facebook</button>
+													<button disabled type="submit" class="btn btn-block btn-fb"><i class="fa fa-facebook float-left mt5"></i> Log In via Facebook</button>
 												</div>
 												<div class="col-lg-6">
-													<button type="submit" class="btn btn-block btn-googl"><i class="fa fa-google float-left mt5"></i> Log In via Google+</button>
+													<button disabled type="submit" class="btn btn-block btn-googl"><i class="fa fa-google float-left mt5"></i> Log In via Google+</button>
 												</div>
 											</div>
 										</form>
@@ -165,9 +171,9 @@
 												<input type="text" class="form-control" id="exampleInputName2" placeholder="Username">
 											</div>
 											<div class="form-group input-group mb20">
-												<input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+												<input type="password" class="form-control" id="exampleInputPassword3" placeholder="Parola">
 											</div>
-											<button type="submit" class="btn btn-log btn-block btn-thm">Sign Up</button>
+											<button type="submit" class="btn btn-log btn-block btn-thm">Inregistrare !</button>
 											<hr>
 											<div class="row">
 												<div class="col-lg-6">

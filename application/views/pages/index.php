@@ -17,19 +17,16 @@
 											<form class="bgc-white bgct-767 pl30 pt10 pl0-767">
 												<div class="form-row align-items-center">
 												    <div class="col-auto home_form_input mb20-xsd">
-												      	<label class="sr-only">Username</label>
+												      	<label class="sr-only">Camin</label>
 												      	<div class="input-group style1 mb-2 mb0-767">
 												        	<div class="input-group-prepend">
-												        		<div class="input-group-text pl0 pb0-767">What</div>
+												        		<div class="input-group-text pl0 pb0-767">Camin</div>
 												        	</div>
 															<div class="select-wrap style1-dropdown">
 														    	<select name="lang" class="form-control js-searchBox">
-																	<option value="">Ex: shopping, restaurant...</option>
-																	<option value="TopPicks">Top Picks</option>
-																	<option value="CityOfLondon">City of London</option>
-																	<option value="OutdoorActivities">Outdoor Activities</option>
-																	<option value="Restaurant">Restaurant</option>
-																	<option value="Hotels">Hotels</option>
+																	<?php foreach($allDorms as $d) {?>
+																		<option value="<?= $d->id; ?>>"><?= $d->name; ?></option>
+																	<?php } ?>
 														    	</select>
 														    </div>
 												      	</div>
@@ -38,16 +35,13 @@
 												      	<label class="sr-only">Username</label>
 												      	<div class="input-group style2 mb-2 mb0-767">
 												        	<div class="input-group-prepend">
-												        		<div class="input-group-text pb0-767">Where</div>
+												        		<div class="input-group-text pb0-767">Facultate</div>
 												        	</div>
 															<div class="select-wrap style2-dropdown">
 														    	<select name="lang" class="form-control js-searchBox2">
-																	<option value="">Your City</option>
-																	<option value="NewYork">New York</option>
-																	<option value="London">London</option>
-																	<option value="Paris">Paris</option>
-																	<option value="Istanbul">Istanbul</option>
-																	<option value="LosAngeles">Los Angeles</option>
+																	<?php foreach($allUnviersities as $u) {?>
+																		<option value="<?= $u->id; ?>>"><?= $u->name; ?></option>
+																	<?php } ?>
 														    	</select>
 														    </div>
 												      	</div>
@@ -125,7 +119,7 @@
 					</div>
 					<div class="col-sm-6 col-md-4 col-xl-2">
 						<div class="icon-box text-center">
-							<div class="icon"><span class="flaticon-shopping-bag"></span></div>
+							<div class="icon"><span class="flaticon-pin"></span></div>
 							<div class="content-details">
 								<div class="title">Camin P12</div>
 							</div>
@@ -133,7 +127,7 @@
 					</div>
 					<div class="col-sm-6 col-md-4 col-xl-2">
 						<div class="icon-box text-center">
-							<div class="icon"><span class="flaticon-tent"></span></div>
+							<div class="icon"><span class="flaticon-pin"></span></div>
 							<div class="content-details">
 								<div class="title">Camin Moxa 1</div>
 							</div>
@@ -141,25 +135,25 @@
 					</div>
 					<div class="col-sm-6 col-md-4 col-xl-2">
 						<div class="icon-box text-center">
-							<div class="icon"><span class="flaticon-desk-bell"></span></div>
+							<div class="icon"><span class="flaticon-pin"></span></div>
 							<div class="content-details">
-								<div class="title">Hotels</div>
+								<div class="title">Camin Leu A</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-4 col-xl-2">
 						<div class="icon-box text-center">
-							<div class="icon"><span class="flaticon-mirror"></span></div>
+							<div class="icon"><span class="flaticon-pin"></span></div>
 							<div class="content-details">
-								<div class="title">Beautu & Spa</div>
+								<div class="title">Camin Leu C</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-4 col-xl-2">
 						<div class="icon-box text-center">
-							<div class="icon"><span class="flaticon-brake"></span></div>
+							<div class="icon"><span class="flaticon-pin"></span></div>
 							<div class="content-details">
-								<div class="title">Automotive</div>
+								<div class="title">Camin P6</div>
 							</div>
 						</div>
 					</div>
@@ -283,8 +277,8 @@
 			<div class="row">
 				<div class="col-lg-6 offset-lg-3">
 					<div class="main-title text-center">
-						<h2>Testimonials From Our Customers</h2>
-						<p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor</p>
+						<h2>Testimoniale Utilizatori</h2>
+						<p>Review-uri la aplicatia de review-uri. Ironic...</p>
 					</div>
 				</div>
 			</div>
@@ -294,7 +288,7 @@
 						<div class="item">
 							<div class="testimonial_post text-center">
 								<div class="thumb">
-									<img src="images/testimonial/1.png" alt="1.png">
+									<img src="<?= base_url('assets/images/icons/review.png'); ?>" alt="review.png">
 									<h4 class="title">Alison Dawn</h4>
 									<div class="client-postn">WordPress Developer</div>
 								</div>
@@ -307,7 +301,7 @@
 						<div class="item">
 							<div class="testimonial_post text-center">
 								<div class="thumb">
-									<img src="images/testimonial/2.png" alt="2.png">
+									<img src="<?= base_url('assets/images/icons/review.png'); ?>" alt="review.png">
 									<h4 class="title">Albert Cole</h4>
 									<div class="client-postn">Designer</div>
 								</div>
@@ -320,7 +314,7 @@
 						<div class="item">
 							<div class="testimonial_post text-center">
 								<div class="thumb">
-									<img src="images/testimonial/3.png" alt="3.png">
+									<img src="<?= base_url('assets/images/icons/review.png'); ?>" alt="review.png">
 									<h4 class="title">Daniel Parker</h4>
 									<div class="client-postn">Front-end Developer</div>
 								</div>
@@ -333,22 +327,9 @@
 						<div class="item">
 							<div class="testimonial_post text-center">
 								<div class="thumb">
-									<img src="images/testimonial/2.png" alt="2.png">
+									<img src="<?= base_url('assets/images/icons/review.png'); ?>" alt="review.png">
 									<h4 class="title">Alison Dawn</h4>
 									<div class="client-postn">WordPress Developer</div>
-								</div>
-								<div class="details">
-									<div class="icon"><span>“</span></div>
-									<p>“ I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends “</p>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimonial_post text-center">
-								<div class="thumb">
-									<img src="images/testimonial/1.png" alt="1.png">
-									<h4 class="title">Albert Cole</h4>
-									<div class="client-postn">Designer</div>
 								</div>
 								<div class="details">
 									<div class="icon"><span>“</span></div>
@@ -368,9 +349,9 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
 					<div class="business_exposer text-center">
-						<h2 class="title text-white mb20">Get Business Exposure</h2>
-						<p class="text-white mb35">Your business deserves efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</p>
-						<a class="btn exposer_btn" href="#">How It Works</a>
+						<h2 class="title text-white mb20">Expune Afacerea Ta</h2>
+						<p class="text-white mb35">Afacerea ta merita o promovare eficienta. Ai un produs care poate ajuta studentii sau le poate face viata mai usoara? Contacteaza-ne si hai sa vedem cum putem colabora.</p>
+						<a class="btn exposer_btn" href="#">Contact Rapid</a>
 					</div>
 				</div>
 			</div>
@@ -384,13 +365,13 @@
 			<div class="row">
 				<div class="col-lg-8">
 					<div class="start_partner tac-smd">
-						<h2>Submit Your Property Today!</h2>
-						<p>Explore some of the best tips from around the city from our partners and friends.</p>
+						<h2>Mai buni impreuna!</h2>
+						<p>Ai o idee de imbunatatire a platformei sau ai gasit un bug? Scrie-ne acum si nu vom uita ca ne-ai ajutat.</p>
 					</div>
 				</div>
 				<div class="col-lg-4 pr10">
 					<div class="parner_reg_btn text-right tac-smd">
-						<a class="btn" href="#">Submit Now</a>
+						<a class="btn" href="#">Trimite Tichet</a>
 					</div>
 				</div>
 			</div>

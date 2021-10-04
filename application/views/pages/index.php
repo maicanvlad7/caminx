@@ -10,7 +10,7 @@
 							<p class="fz18 color-white">Alege o facultate iar noi iti vom arata o lista de camine in care poti sta si review-uri despre ele.</p>
 						</div>
 						<div class="row justify-content-center">
-							<div class="col-lg-10 col-xl-8">
+							<div class="col-lg-5 col-xl-5">
 								<div class="home_adv_srch_opt text-center">
 									<div class="wrapper">
 										<div class="home_adv_srch_form">
@@ -26,21 +26,6 @@
 														    	<select name="lang" class="form-control js-searchBox">
 																	<?php foreach($allDorms as $d) {?>
 																		<option value="<?= $d->id; ?>>"><?= $d->name; ?></option>
-																	<?php } ?>
-														    	</select>
-														    </div>
-												      	</div>
-												    </div>
-												    <div class="col-auto home_form_input">
-												      	<label class="sr-only">Username</label>
-												      	<div class="input-group style2 mb-2 mb0-767">
-												        	<div class="input-group-prepend">
-												        		<div class="input-group-text pb0-767">Facultate</div>
-												        	</div>
-															<div class="select-wrap style2-dropdown">
-														    	<select name="lang" class="form-control js-searchBox2">
-																	<?php foreach($allUnviersities as $u) {?>
-																		<option value="<?= $u->id; ?>>"><?= $u->name; ?></option>
 																	<?php } ?>
 														    	</select>
 														    </div>

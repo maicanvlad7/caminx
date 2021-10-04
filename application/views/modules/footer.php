@@ -107,5 +107,27 @@
 <script src="<?= base_url('assets/js/timepicker.js'); ?>"></script>
 <!-- Custom script for all pages -->
 <script src="<?= base_url('assets/js/script.js'); ?>"></script>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<?php if($this->session->flashdata('success')) {?>
+	<script>
+        Swal.fire(
+            'Succes!',
+            "<?= $this->session->flashdata('success'); ?>",
+            'success'
+        )
+	</script>
+<?php }?>
+
+<?php if($this->session->flashdata('error')) {?>
+	<script>
+        Swal.fire(
+            'Oops :(',
+            "<?= $this->session->flashdata('error'); ?>",
+            'warning'
+        )
+	</script>
+<?php }?>
 </body>
 </html>

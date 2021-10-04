@@ -61,8 +61,8 @@
 				<li>
 					<a href="<?= base_url(''); ?>"><span class="title flaticon-wifi"> API</span></a>
 				</li>
-				<?php if($this->session->userdata('userId')) {?>
-					<li class="list-inline-item add_listing"><a href="page-add-new-listing.html"><span class="icon">+</span><span class="dn-lg"> Adauga Review</span></a></li>
+				<?php if($this->session->userdata('id')) {?>
+					<li class="list-inline-item list_s"><a href="#" class="btn flaticon-avatar"> <span class="dn-1200"><?= $this->session->userdata('username'); ?></span></a></li>
 				<?php }else{ ?>
 					<li class="list-inline-item list_s"><a href="#" class="btn flaticon-avatar" data-toggle="modal" data-target=".bd-example-modal-lg"> <span class="dn-1200">Login/Register</span></a></li>
 				<?php }?>
@@ -94,12 +94,12 @@
 					<div class="row mt40 tab-pane fade show active pl20 pr20" id="home" role="tabpanel" aria-labelledby="home-tab">
 						<div class="col-lg-12">
 							<div class="login_form">
-								<form action="#">
+								<form action="<?= base_url('auth/login'); ?>" method="POST">
 									<div class="input-group mb-2 mr-sm-2">
-										<input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username / Email">
+										<input type="text" class="form-control" id="inlineFormInputGroupUsername2" name="email" placeholder="Email" required>
 									</div>
 									<div class="input-group form-group mb5">
-										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+										<input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password" required>
 									</div>
 									<div class="form-group custom-control custom-checkbox">
 										<input type="checkbox" class="custom-control-input" id="exampleCheck1">
@@ -131,23 +131,28 @@
 									<li class="nav-item" role="presentation">
 										<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Student</a>
 									</li>
-									<li class="nav-item" role="presentation">
-										<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Business Owner</a>
-									</li>
 								</ul>
 								<div class="tab-content" id="pills-tabContent">
 									<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-										<form action="#">
+										<form action="<?= base_url('auth/register'); ?>" method="POST">
 											<div class="form-group input-group">
-												<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
+												<input type="email" class="form-control"  name="email" placeholder="Email" required>
 											</div>
 											<div class="form-group input-group">
-												<input type="text" class="form-control" id="exampleInputName" placeholder="Username">
+												<input type="text" class="form-control"  name="username" placeholder="Username" required>
 											</div>
 											<div class="form-group input-group mb20">
-												<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Parola">
+												<input type="password" class="form-control"  name="password" placeholder="Parola" required>
 											</div>
-											<button type="submit" class="btn btn-log btn-block btn-thm">Sign Up</button>
+											<div class="form-group input-group">
+												<div class="ui_kit_whitchbox">
+													<div class="custom-control custom-switch">
+														<input type="checkbox" class="custom-control-input" id="customSwitch1" name="student"  required>
+														<label class="custom-control-label" for="customSwitch1">Sunt student</label>
+													</div>
+												</div>
+											</div>
+											<button type="submit" class="btn btn-log btn-block btn-thm">Inregistrare</button>
 											<hr>
 											<div class="row justify-content-center">
 												<p>Coming SOON</p>

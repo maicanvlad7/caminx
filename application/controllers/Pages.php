@@ -15,12 +15,10 @@ class Pages extends CI_Controller
 		$dorm       = new Dorm_model();
 
 		$topUniversities = $university->getBest();
-		$allUniversities = $university->getAll();
 		$allDorms        = $dorm->getAll();
 
 		$data = array(
 			'topUniversities' => $topUniversities,
-			'allUnviersities' => $allUniversities,
 			'allDorms'         => $allDorms,
 		);
 

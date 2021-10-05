@@ -26,5 +26,10 @@ class Pages extends CI_Controller
 
 	}
 
+	public function contact()
+	{
+		load_page('contact');
+	}
+
 
 }

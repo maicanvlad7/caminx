@@ -14,7 +14,7 @@
 								<div class="home_adv_srch_opt text-center">
 									<div class="wrapper">
 										<div class="home_adv_srch_form">
-											<form class="bgc-white bgct-767 pl30 pt10 pl0-767">
+											<form class="bgc-white bgct-767 pl30 pt10 pl0-767" action="<?= base_url('camin/search');?>" method="POST">
 												<div class="form-row align-items-center">
 												    <div class="col-auto home_form_input mb20-xsd">
 												      	<label class="sr-only">Camin</label>
@@ -23,7 +23,7 @@
 												        		<div class="input-group-text pl0 pb0-767">Camin</div>
 												        	</div>
 															<div class="select-wrap style1-dropdown">
-														    	<select name="lang" class="form-control js-searchBox">
+														    	<select name="camin" class="form-control js-searchBox" required>
 																	<?php foreach($allDorms as $d) {?>
 																		<option value="<?= $d->id; ?>>"><?= $d->name; ?></option>
 																	<?php } ?>

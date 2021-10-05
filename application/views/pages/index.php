@@ -93,12 +93,7 @@
 												<li class="list-inline-item"><a href="#">Top 3</a></li>
 											</ul>
 											<ul class="listing_reviews">
-												<li class="list-inline-item"><a class="text-white" href="#"><span class="fa fa-star"></span></a></li>
-												<li class="list-inline-item"><a class="text-white" href="#"><span class="fa fa-star"></span></a></li>
-												<li class="list-inline-item"><a class="text-white" href="#"><span class="fa fa-star"></span></a></li>
-												<li class="list-inline-item"><a class="text-white" href="#"><span class="fa fa-star"></span></a></li>
-												<li class="list-inline-item"><a class="text-white" href="#"><span class="fa fa-star"></span></a></li>
-												<li class="list-inline-item"><a class="text-white total_review" href="#">(5 Review)</a></li>
+												<li class="list-inline-item"><a class="text-white total_review" href="#">(5 Review-uri)</a></li>
 											</ul>
 										</div>
 									</div>
@@ -113,7 +108,7 @@
 										</div>
 										<div class="fp_footer">
 											<ul class="fp_meta float-left mb0">
-												<li class="list-inline-item"><a href="#" class="btn btn-danger btn-sm" style="color:white;">Website</a></li>
+												<li class="list-inline-item"><a href="#" class="btn btn-danger btn-sm" style="color:white;">Vezi camine</a></li>
 											</ul>
 											<ul class="fp_meta float-right mb0">
 												<li class="list-inline-item"><a href="#"><span class="flaticon-zoom"></span></a></li>

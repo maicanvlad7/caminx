@@ -7,6 +7,7 @@ class Camin extends CI_Controller
 		parent::__construct();
 		$this->load->model('dorm_model');
 		$this->load->model('review_model');
+		$this->load->model('university_model');
 	}
 
 	public function search()
@@ -48,6 +49,25 @@ class Camin extends CI_Controller
 
 
 		load_page('review', $data);
+
+	}
+
+	public function listaCamine($numeFacultate)
+	{
+		$numeFacultate = urldecode($numeFacultate);
+
+		$dorm = new Dorm_model();
+		$univ = new University_model();
+
+		$currentUniv = $univ->getByName($numeFacultate);
+		$dorms = $dorm->getAllByUnivId($currentUniv->id);
+
+		$data = array(
+			'univ'  => $currentUniv,
+			'dorms' => $dorms,
+		);
+
+		load_page('lista-camine', $data);
 
 	}
 }

@@ -55,3 +55,4 @@ $route['translate_uri_dashes'] = FALSE;
 $route['tester'] = 'pages/jsonCompiler';
 
 $route['contact'] = 'pages/contact';
+$route['lista-camine/(:any)'] = 'camin/listaCamine/$1';

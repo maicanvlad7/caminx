@@ -28,4 +28,9 @@ class Dorm_model extends CI_Model {
 		return $this->db->query($query)->row();
 	}
 
+	public function getAllByUnivId($id)
+	{
+		return $this->db->where('university_id', $id)->get($this->table)->result();
+	}
+
 }

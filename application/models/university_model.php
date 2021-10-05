@@ -17,4 +17,10 @@ class University_model extends CI_Model {
 		return $this->db->get($this->table)->result();
 	}
 
+
+	public function getByName($name)
+	{
+		return $this->db->where('name', $name)->get($this->table)->row();
+	}
+
 }

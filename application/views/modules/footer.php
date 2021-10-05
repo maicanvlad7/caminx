@@ -23,19 +23,6 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-5 col-md-6 col-lg-2 col-xl-2">
-				<div class="footer_qlink_widget pl0">
-					<h4>Descopera CaminX</h4>
-					<ul class="list-unstyled">
-						<li><a href="#">Chicago</a></li>
-						<li><a href="#">Los Angels</a></li>
-						<li><a href="#">Miami</a></li>
-						<li><a href="#">New York</a></li>
-						<li><a href="#">Florida</a></li>
-						<li><a href="#">Boston</a></li>
-					</ul>
-				</div>
-			</div>
 			<div class="col-sm-7 col-md-6 col-lg-4 col-xl-4">
 				<div class="footer_social_widget">
 					<h4>Aboneaza-te!</h4>

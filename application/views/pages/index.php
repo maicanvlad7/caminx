@@ -7,7 +7,7 @@
 					<div class="home_content home1">
 						<div class="home-text text-center">
 							<h2 class="fz50">Despre ce camin vrei sa citesti?</h2>
-							<p class="fz18 color-white">Alege o facultate iar noi iti vom arata o lista de camine in care poti sta si review-uri despre ele.</p>
+							<p class="fz18 color-white">Cauta un camin si citeste review-uri lasate de alti studenti. Poti lasa chiar tu un review daca ai ceva de impartasit !</p>
 						</div>
 						<div class="row justify-content-center">
 							<div class="col-lg-5 col-xl-5">

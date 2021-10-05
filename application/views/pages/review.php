@@ -202,7 +202,7 @@
 						<?php }else {?>
 							<div class="ui_kit_message_box">
 								<div class="alert alart_style_one alert-dismissible fade show" role="alert">
-									Ai lasat deja un review. Il poti edita din dashboard sau poti lasa review la alt camin.
+									Ai lasat deja un review. Poti lasa review si la alte camine acum.
 								</div>
 							</div>
 						<?php }?>

@@ -38,44 +38,6 @@
 											</form>
 										</div>
 									</div>
-									<div class="home_mobile_slider home_custom_list dn db-767">
-										<div class="item">
-											<div class="icon_home1">
-												<div class="icon"><span class="flaticon-cutlery"></span></div>
-												<p>Restaurant</p>
-											</div>
-										</div>
-										<div class="item">
-											<div class="icon_home1">
-												<div class="icon"><span class="flaticon-shopping-bag"></span></div>
-												<p>Shopping</p>
-											</div>
-										</div>
-										<div class="item">
-											<div class="icon_home1">
-												<div class="icon"><span class="flaticon-tent"></span></div>
-												<p>Outdoor Activities</p>
-											</div>
-										</div>
-										<div class="item">
-											<div class="icon_home1">
-												<div class="icon"><span class="flaticon-desk-bell"></span></div>
-												<p>Hotels</p>
-											</div>
-										</div>
-										<div class="item">
-											<div class="icon_home1">
-												<div class="icon"><span class="flaticon-mirror"></span></div>
-												<p>Beautu & Spa</p>
-											</div>
-										</div>
-										<div class="item">
-											<div class="icon_home1">
-												<div class="icon"><span class="flaticon-brake"></span></div>
-												<p>Automotive</p>
-											</div>
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -94,54 +56,16 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-6 col-md-4 col-xl-2">
-						<div class="icon-box text-center">
-							<div class="icon"><span class="flaticon-pin"></span></div>
-							<div class="content-details">
-								<div class="title">Camin P22</div>
+					<?php foreach($allDorms as $ad) {?>
+						<div class="col-sm-6 col-md-4 col-xl-2">
+							<div class="icon-box text-center">
+								<div class="icon"><span class="flaticon-pin"></span></div>
+								<div class="content-details">
+									<div class="title"><?= $ad->name;?></div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-6 col-md-4 col-xl-2">
-						<div class="icon-box text-center">
-							<div class="icon"><span class="flaticon-pin"></span></div>
-							<div class="content-details">
-								<div class="title">Camin P12</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4 col-xl-2">
-						<div class="icon-box text-center">
-							<div class="icon"><span class="flaticon-pin"></span></div>
-							<div class="content-details">
-								<div class="title">Camin Moxa 1</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4 col-xl-2">
-						<div class="icon-box text-center">
-							<div class="icon"><span class="flaticon-pin"></span></div>
-							<div class="content-details">
-								<div class="title">Camin Leu A</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4 col-xl-2">
-						<div class="icon-box text-center">
-							<div class="icon"><span class="flaticon-pin"></span></div>
-							<div class="content-details">
-								<div class="title">Camin Leu C</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4 col-xl-2">
-						<div class="icon-box text-center">
-							<div class="icon"><span class="flaticon-pin"></span></div>
-							<div class="content-details">
-								<div class="title">Camin P6</div>
-							</div>
-						</div>
-					</div>
+					<?php }?>
 				</div>
 			</div>
 		</div>
@@ -336,7 +260,7 @@
 					<div class="business_exposer text-center">
 						<h2 class="title text-white mb20">Expune Afacerea Ta</h2>
 						<p class="text-white mb35">Afacerea ta merita o promovare eficienta. Ai un produs care poate ajuta studentii sau le poate face viata mai usoara? Contacteaza-ne si hai sa vedem cum putem colabora.</p>
-						<a class="btn exposer_btn" href="#">Contact Rapid</a>
+						<a class="btn exposer_btn" href="<?= base_url('contact');?>">Contact Rapid</a>
 					</div>
 				</div>
 			</div>
@@ -356,7 +280,7 @@
 				</div>
 				<div class="col-lg-4 pr10">
 					<div class="parner_reg_btn text-right tac-smd">
-						<a class="btn" href="#">Trimite Tichet</a>
+						<a class="btn" href="<?= base_url('contact');?>" target="_blank">Trimite Tichet</a>
 					</div>
 				</div>
 			</div>

@@ -12,6 +12,13 @@ class Review extends CI_Controller
 	{
 		$text = $this->input->post('text');
 
+		$text_has_bad_words = filter_bad_words($text);
+
+		if($text_has_bad_words) {
+			$this->session->set_flashdata('error','Te rugam sa nu folosesti cuvinte urate chiar daca experienta la camin nu a fost una plcauta.');
+			redirect($_SERVER['HTTP_REFERER']);
+		}
+
 		$review = new stdClass();
 
 		$review->dorm_id = $dormId;

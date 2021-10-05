@@ -689,7 +689,7 @@
 	.home_adv_srch_form .input-group-text{padding-left: 0;}
 
 	.home_form_input{background-color: #fff;border-radius: 40px;height: 60px;line-height: 60px;padding-left: 25px !important;width: 100%;}
-	.home_form_input2{bottom: -4px;position: absolute;right: -3px;}
+	.home_form_input2{bottom: 16px;position: absolute;right: -3px;}
 	.home_adv_srch_form.home2 .home_form_input{border-radius: 8px;}
 	.home_adv_srch_form.home2 .home_form_input2{bottom: -3px;}
 	.home_adv_srch_form.home3 .home_form_input2{bottom: 0px;position: absolute;right: -10px;}

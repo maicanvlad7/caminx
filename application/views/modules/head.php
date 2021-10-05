@@ -209,7 +209,7 @@
 				<span class="mt15">CaminX</span>
 			</div>
 			<ul class="menu_bar_home2">
-				<li class="list-inline-item"><a class="custom_search_with_menu_trigger msearch_icon" href="#" data-toggle="modal" data-target="#staticBackdrop"><span class="flaticon-loupe"></span></a></li>
+				<li class="list-inline-item"><a class="custom_search_with_menu_trigger msearch_icon" ><span class="flaticon-loupe"></span></a></li>
 				<li class="list-inline-item"><a class="muser_icon" href="page-register.html"><span class="flaticon-avatar"></span></a></li>
 				<li class="list-inline-item"><a class="menubar" href="#menu"><span></span></a></li>
 			</ul>

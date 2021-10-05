@@ -30,26 +30,26 @@
 				<div class="col-lg-5">
 					<div class="form_grid">
 						<h3 class="title mb5">Lasa-ne un mesaj!</h3>
-			            <form class="contact_form" id="contact_form" name="contact_form" action="#" method="post" novalidate="novalidate">
+			            <form class="contact_form" id="contact_form" name="contact_form" action="<?= base_url('contact/send'); ?>" method="post">
 							<div class="row">
 				                <div class="col-md-12">
 				                    <div class="form-group">
-										<input id="form_name" name="form_name" class="form-control" required="required" type="text" placeholder="Nume">
+										<input id="form_name" name="name" class="form-control" required="required" type="text" placeholder="Nume">
 									</div>
 				                </div>
 				                <div class="col-md-12">
 				                    <div class="form-group">
-				                    	<input id="form_email" name="form_email" class="form-control required email" required="required" type="email" placeholder="Email">
+				                    	<input id="form_email" name="email" class="form-control required email" required="required" type="email" placeholder="Email">
 				                    </div>
 				                </div>
 				                <div class="col-md-12">
 				                    <div class="form-group">
-				                    	<input id="form_phone" name="form_phone" class="form-control required phone" required="required" type="text" placeholder="Telefon">
+				                    	<input id="form_phone" name="phone" class="form-control required phone" required="required" type="text" placeholder="Telefon">
 				                    </div>
 				                </div>
 				                <div class="col-sm-12">
 		                            <div class="form-group">
-		                                <textarea id="form_message" name="form_message" class="form-control required" rows="8" required="required" placeholder="Mesajul Tau"></textarea>
+		                                <textarea id="form_message" name="message" class="form-control required" rows="8" required="required" placeholder="Mesajul Tau"></textarea>
 		                            </div>
 									<div class="form-group">
 										<div class="custom-control custom-checkbox">
@@ -58,7 +58,7 @@
 										</div>
 									</div>
 				                    <div class="form-group mb0">
-					                    <button type="button" class="btn btn-lg btn-thm">Trimite</button>
+					                    <button type="submit" value="submit" action="submit" class="btn btn-lg btn-thm">Trimite</button>
 				                    </div>
 				                </div>
 			                </div>

@@ -221,16 +221,13 @@
 				<a href="<?= base_url(''); ?>"><span class="title">Acasa</span></a>
 			</li>
 			<li>
-				<a href="<?= base_url(''); ?>"><span class="title">Review</span></a>
-			</li>
-			<li>
-				<a href="<?= base_url(''); ?>"><span class="title">Contact</span></a>
+				<a href="<?= base_url('contact'); ?>"><span class="title">Contact</span></a>
 			</li>
 			<li>
 				<a href="<?= base_url(''); ?>"><span class="title flaticon-wifi"> API</span></a>
 			</li>
-			<?php if($this->session->userdata('userId')) {?>
-				<li class="list-inline-item add_listing"><a href="page-add-new-listing.html"><span class="icon">+</span><span class="dn-lg"> Adauga Review</span></a></li>
+			<?php if($this->session->userdata('id')) {?>
+				<li class="list-inline-item add_listing"><a href="page-add-new-listing.html"><span class="icon">+ <?= $this->session->userdata('username'); ?></span><span class="dn-lg"></span></a></li>
 			<?php }else{ ?>
 				<li class="list-inline-item list_s"><a href="#" class="btn flaticon-avatar" data-toggle="modal" data-target=".bd-example-modal-lg"> <span class="dn-1200">Login/Register</span></a></li>
 			<?php }?>

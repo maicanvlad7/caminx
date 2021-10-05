@@ -1,6 +1,5 @@
 <?php
 
-//SEO HELPER - gets SEO for page based on passed value
 
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 

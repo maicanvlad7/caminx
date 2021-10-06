@@ -109,6 +109,7 @@
 										<div class="fp_footer">
 											<ul class="fp_meta float-left mb0">
 												<li class="list-inline-item"><a href="<?= base_url('lista-camine/'. $tu->name); ?>" class="btn btn-primary btn-lg" style="color:white;">Vezi camine</a></li>
+>>>>>>>>> Temporary merge branch 2
 											</ul>
 											<ul class="fp_meta float-right mb0">
 												<li class="list-inline-item"><a href="#"><span class="flaticon-zoom"></span></a></li>
